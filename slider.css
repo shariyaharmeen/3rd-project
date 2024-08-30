@@ -1,0 +1,305 @@
+body{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+.slide-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    background-color: linear-gradient(to right, rgb(225, 65, 108), rgb(225, 75, 43));
+}
+
+.image-slider {
+    width: 100%;
+    /* height: 600px; */
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+
+.slides-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides-div h2 {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.slides-div img {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    transition: .5s;
+    filter: saturate(10%);
+}
+
+.button {
+    position: absolute;
+    width: 260px;
+    height: 300px;
+    transition: .5s;
+
+
+}
+
+#slider-span1:target~.image-slider #img1,
+#slider-span1:target~.image-slider #button-1 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span2:target~.image-slider #img2,
+#slider-span2:target~.image-slider #button-2 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span3:target~.image-slider #img3,
+#slider-span3:target~.image-slider #button-3 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span4:target~.image-slider #img4,
+#slider-span4:target~.image-slider #button-4 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span5:target~.image-slider #img5,
+#slider-span5:target~.image-slider #button-5 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span6:target~.image-slider #img6,
+#slider-span6:target~.image-slider #button-6 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span7:target~.image-slider #img7,
+#slider-span7:target~.image-slider #button-7 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span8:target~.image-slider #img8,
+#slider-span8:target~.image-slider #button-8 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span9:target~.image-slider #img9,
+#slider-span9:target~.image-slider #button-9 {
+    width: 300px;
+    height: 230px;
+    filter: saturate(100%);
+}
+
+#slider-span1:target~.image-slider {
+    left: 25%
+}
+
+#slider-span2:target~.image-slider {
+    left: 20%
+}
+
+#slider-span3:target~.image-slider {
+    left: 15%
+}
+
+#slider-span4:target~.image-slider {
+    left: 10%
+}
+
+
+#slider-span6:target~.image-slider {
+    left: -10%
+}
+
+#slider-span7:target~.image-slider {
+    left: -15%
+}
+
+#slider-span8:target~.image-slider {
+    left: -20%
+}
+
+#slider-span9:target~.image-slider {
+    left: -25%
+}
+
+@media(min-width:300px) and ( max-width: 610px){
+    .slide-container {
+        width: 100%;
+        height: 25vh !important;
+    }
+    .slides-div h2 {
+        font-size: 15px !important;
+    }
+    #slider-span1:target~.image-slider #img1, #slider-span1:target~.image-slider #button-1 {
+        width: 180px !important;
+        height: 130px !important;
+       
+    }
+    #slider-span2:target~.image-slider #img2, #slider-span2:target~.image-slider #button-2 {
+        width: 180px !important;
+        height: 130px !important;
+       
+    }
+    #slider-span3:target~.image-slider #img3, #slider-span3:target~.image-slider #button-3 {
+        width: 180px !important;
+        height: 130px !important;
+       
+    }
+    #slider-span4:target~.image-slider #img4, #slider-span4:target~.image-slider #button-4 {
+        width: 180px !important;
+        height: 130px !important;
+       
+    }
+    #slider-span5:target~.image-slider #img5, #slider-span5:target~.image-slider #button-5 {
+        width: 180px !important;
+        height: 130px !important;
+       
+    }
+   
+    #slider-span6:target~.image-slider #img6, #slider-span6:target~.image-slider #button-6 {
+        width: 180px !important;
+        height: 130px !important;
+    }
+
+    #slider-span7:target~.image-slider #img7, #slider-span7:target~.image-slider #button-7 {
+        width: 180px !important;
+        height: 130px !important;
+    }
+    #slider-span8:target~.image-slider #img8, #slider-span8:target~.image-slider #button-8 {
+        width: 180px !important;
+        height: 130px !important;
+       
+    }
+    #slider-span9:target~.image-slider #img9, #slider-span9:target~.image-slider #button-9 {
+        width: 180px !important;
+        height: 130px !important;
+    }
+    /* .slides-div img {
+         width: 140px !important;
+        height: 110px !important;
+    } */
+    .slides-div img {
+        width: 100px !important;
+        height: 80px !important;
+    }
+}
+@media(min-width:611px) and (max-width:850px){
+    .slide-container {
+        height: 45vh;
+    }
+    .slides-div img { 
+        width: 120px !important;
+        height: 100px !important;
+    }
+    #slider-span1:target~.image-slider #img1, #slider-span1:target~.image-slider #button-1 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span2:target~.image-slider #img2, #slider-span2:target~.image-slider #button-2 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span3:target~.image-slider #img3, #slider-span3:target~.image-slider #button-3 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span4:target~.image-slider #img4, #slider-span4:target~.image-slider #button-4 {
+        width: 200px !important;
+        height: 150px !important;
+      
+    }
+    #slider-span5:target~.image-slider #img5, #slider-span5:target~.image-slider #button-5 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span6:target~.image-slider #img6, #slider-span6:target~.image-slider #button-6 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span7:target~.image-slider #img7, #slider-span7:target~.image-slider #button-7 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span8:target~.image-slider #img8, #slider-span8:target~.image-slider #button-8 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+    #slider-span9:target~.image-slider #img9, #slider-span9:target~.image-slider #button-9 {
+        width: 200px !important;
+        height: 150px !important;
+    }
+}
+@media(min-width:851px) and (max-width:1100px){
+    .slides-div img {
+        width: 150px !important;
+        height: 120px !important;
+    }
+    .slide-container {
+        height: 45vh !important;
+    }
+    #slider-span1:target~.image-slider #img1, #slider-span1:target~.image-slider #button-1 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span2:target~.image-slider #img2, #slider-span2:target~.image-slider #button-2 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span3:target~.image-slider #img3, #slider-span3:target~.image-slider #button-3 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span4:target~.image-slider #img4, #slider-span4:target~.image-slider #button-4 {
+        width: 230px !important;
+        height: 180px !important;
+      
+    }
+    #slider-span5:target~.image-slider #img5, #slider-span5:target~.image-slider #button-5 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span6:target~.image-slider #img6, #slider-span6:target~.image-slider #button-6 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span7:target~.image-slider #img7, #slider-span7:target~.image-slider #button-7 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span8:target~.image-slider #img8, #slider-span8:target~.image-slider #button-8 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    #slider-span9:target~.image-slider #img9, #slider-span9:target~.image-slider #button-9 {
+        width: 230px !important;
+        height: 180px !important;
+    }
+    .slides-div h2 {
+        font-size: 15px !important;
+    }
+}

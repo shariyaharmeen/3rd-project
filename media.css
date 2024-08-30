@@ -1,0 +1,327 @@
+@media(min-width:300px) and ( max-width: 610px){
+    .navbar img {
+        margin: 5px;
+        position: relative;
+        top: 15px;
+        left: 115px;
+    }
+    .navbar {
+        display: block;
+      }
+      #icons {
+        font-size: 15px;
+    }
+    .search {
+        width: auto;
+       }
+   
+    .navbar ul li a {
+        display: none;
+    }
+    .navi-bar ul {
+        display: none;
+    }
+    #sloop figure img {
+        height: 200px;
+    }
+    .first-line h1 {
+        line-height: 5rem;
+       font-size: 13px;
+    }
+    .products-1 {
+        justify-content: center;
+    }
+    .items-container {
+      
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    .products-1 img {
+        object-fit: cover;
+        height: 27vh;
+        width: 150px;
+    }
+    .new h1 {
+        display: none;
+    }
+    .new h2{
+        display: block;
+        font-size: 20px;
+    }
+    .recom h1{
+        font-size: 20px;
+      }
+    .recom h2 {
+        font-size: 20px;
+    }
+    .time h1{
+        font-size: 20px;
+    }
+    .move h1{
+        font-size: 20px;
+    }
+    .collection h1{
+        font-size: 20px;
+    }
+   
+    .icon-img h2{
+        font-size: 10px;
+    }
+    .footer-column ul li{
+        font-size: 10px;
+    }
+    .footer-column h2, .footer-column h3{
+        font-size: 20px;
+    }
+    .footer-bottom{
+        font-size: 12px;
+    }
+    .photo{
+        width: 100%;
+    }
+    .product-1{
+        width: 100%;
+    }
+    .price p {
+        font-size: 8px;
+    }
+    .ratting i {
+        font-size: 8px;
+    }
+    .heart-icon {
+        font-size: 10px;
+    }
+    
+    .products img {
+        object-fit: cover;
+        height: 17vh;
+    }
+    .price h4 {
+      font-size: 12px;
+    }
+    
+   
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:white;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open-menu, .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+        width: 50%;
+    }
+} 
+@media(min-width:611px) and (max-width:850px){
+    .navbar ul {
+        gap: 10px;
+        margin: 15px;
+    }
+    .navbar ul li a {
+        font-size: 9px;
+    }
+    #icons {
+        font-size: 15px;
+    }
+    .menu li a {
+        font-size: 8px;
+    }
+    #sloop figure img {
+        height: 350px;
+    }
+    .navi-bar ul a {
+        font-size: 10px;
+    }
+    .first-line h1 {
+        font-size: 20px;
+    }
+
+    .image-slider {
+        overflow-x: hidden;
+    }
+   
+    .new h1 {
+        display: none;
+    }
+    .new h2{
+        display: block;
+        font-size: 20px;
+    }
+    .recom h1{
+        font-size: 20px;
+      }
+    .recom h2 {
+        font-size: 20px;
+    }
+    .time h1{
+        font-size: 20px;
+    }
+    .move h1{
+        font-size: 20px;
+    }
+    .collection h1{
+        font-size: 20px;
+    }
+    .products img {
+        height: 26vh;
+    }
+    .ratting i {
+        font-size: 10px;
+    }
+    .heart-icon {
+        font-size: 10px;
+    }
+    .price h4 {
+        font-size: 10px;
+    }
+    .price p {
+        font-size: 10px;
+    }
+    .brand-text h1 {
+        font-size: 20px;
+    }
+    .icon-img h2 {
+        font-size: 10px;
+    }
+    .footer-column h2, .footer-column h3 {
+        font-size: 20px;
+    }
+    .footer-column ul li {
+        font-size: 12px;
+    }
+    .items-container {
+      
+        display: flex;
+       
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    .products-1 img {
+        object-fit: cover;
+        height: 27vh;
+    }
+}
+@media(min-width:851px) and (max-width:1100px){
+    .navbar ul li a {
+        font-size: 10px;
+    }
+    #icons {
+        font-size: 15px;
+    }
+    .menu li a {
+        font-size: 10px;
+    }
+    #sloop figure img {
+        height: 400px;
+    }
+    .navi-bar ul a {
+        font-size: 10px;
+    }
+    .first-line h1 {
+        font-size: 20px;
+    }
+    .new h1 {
+        display: none;
+    }
+    .new h2{
+        display: block;
+        font-size: 20px;
+    }
+    .recom h1{
+        font-size: 20px;
+      }
+    .recom h2 {
+        font-size: 20px;
+    }
+    .time h1{
+        font-size: 20px;
+    }
+    .move h1{
+        font-size: 20px;
+    }
+    .collection h1{
+        font-size: 20px;
+    }
+    .products img {
+        height: 35vh;
+    }
+    .ratting i {
+        font-size: 10px;
+    }
+    .heart-icon {
+        font-size: 10px;
+    }
+    .price h4 {
+        font-size: 10px;
+    }
+    .price p {
+        font-size: 10px;
+    }
+    .brand-text h1 {
+        font-size: 20px;
+    }
+    .icon-img h2 {
+        font-size: 10px;
+    }
+    .items-container {
+      
+        display: flex;
+       
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+    }
+    .products-1 img {
+        height: 35vh;
+    }
+    .footer-column h2, .footer-column h3 {
+        font-size: 20px;}
+    .footer-column ul li {
+        font-size: 12px;
+    }
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+}
+@media (min-width:1101px) and (max-width:1950px){
+
+    .navbar {
+        align-items: center;
+    }
+    
+    .navbar ul li a {
+        font-size: 13px;
+    }
+    .new h1{
+        display: none;
+    }
+    .new h2{
+        display: block;
+    }
+    .products-1 img {
+        height: 46vh;
+    }
+}
+    
