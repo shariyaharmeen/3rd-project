@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <style>
+        /* / start of testimonial section / */
+
+[type=radio] {
+    display: none;
+}
+
+#slider {
+    height: 30vw;
+    position: relative;
+    margin: 30px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    /* / Add this to prevent overflow / */
+    background-size: cover;
+    /* / Ensures the image covers the circle / */
+    background-position: center;
+    /* / Centers the image / */
+}
+
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-119%, 0, -200px);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-77%, 0, -100px);
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(64%, 0, -100px);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(119%, 0, -200px);
+}
+
+/* / Add content styles / */
+.testimonial-content {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    width: 100%;
+}
+
+/* / Show content only when the corresponding radio button is checked / */
+#s1:checked~.content1,
+#s2:checked~.content2,
+#s3:checked~.content3,
+#s4:checked~.content4,
+#s5:checked~.content5 {
+    display: block;
+}
+
+/* / Image background styles / */
+#slide1 {
+    background: url(/images/fs2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slide2 {
+    background: url(/images/fs3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slide3 {
+    background: url(/images/fs4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slide4 {
+    background: url(/images/fs5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#slide5 {
+    background: url(/images/fs7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+    #slider {
+        height: 50vw;
+    }
+
+    #slider label {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* #slider {
+        / height: 60vw; /
+    } */
+
+    #slider label {
+        width: 150px;
+        height: 150px;
+    }
+
+    .testimonial-content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    #slider {
+        height: 45vh;
+        margin: 4px;
+        width: 100vw;
+
+    }
+
+
+    #slider label {
+        width: 120px;
+        height: 120px;
+    }
+
+    .testimonial-content {
+        padding: 20px;
+    }
+    .testimonial-content.content3 h1 {
+        font-size: 20px;
+    }
+    .testimonial-content.content3 p {
+        font-size: 10px;
+    }
+    #s1:checked~#slide3, #s2:checked~#slide4, #s3:checked~#slide5, #s4:checked~#slide1, #s5:checked~#slide2 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+        transform: translate3d(106%, 0, -200px);
+    }
+    #s1:checked~#slide2, #s2:checked~#slide3, #s3:checked~#slide4, #s4:checked~#slide5, #s5:checked~#slide1 {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+        transform: translate3d(53%, 0, -100px);
+    }
+    #s1:checked~#slide5, #s2:checked~#slide1, #s3:checked~#slide2, #s4:checked~#slide3, #s5:checked~#slide4 {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+        transform: translate3d(-57%, 0, -100px);
+    }
+    #s1:checked~#slide4, #s2:checked~#slide5, #s3:checked~#slide1, #s4:checked~#slide2, #s5:checked~#slide3 {
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+        transform: translate3d(-111%, 0, -200px);
+    }
+}
+@media (min-width:900px) and (max-width:1300px) {
+    #slider {
+        height: 40vw;
+       
+    }
+}
+@media (min-width:1300px) and (max-width:1440px) {
+    .testimonial-content {
+        bottom: 0px;
+    }
+}
+
+/* / end of testimonial section / */
+
+
+    </style>
+    <section class="wrapper-slider">
+
+        <div class="header-section">
+            <h1>Testimonial</h1>
+        </div>
+
+        <div id="slider">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3" checked>
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+
+            <label for="s1" id="slide1"></label>
+            <label for="s2" id="slide2"></label>
+            <label for="s3" id="slide3"></label>
+            <label for="s4" id="slide4"></label>
+            <label for="s5" id="slide5"></label>
+
+            <!-- Content sections -->
+            <div class="testimonial-content content1">
+                <h1>MEN</h1>
+                <p class="container">A Titan watch adds instant style to a man's look, combining elegance with practicality.
+                </p>
+            </div>
+            <div class="testimonial-content content2">
+                <h1>Women</h1>
+                <p class="container">A Titan watch enhances a woman's elegance, blending style with function. It's a timeless accessory for any occasion.
+                </p>
+            </div>
+            <div class="testimonial-content content3">
+                <h1>KIDS</h1>
+                <p class="container">Two kids, excited and playful, wear their Titan watches, feeling stylish and grown-up as they race against time on their little adventures.
+                </p>
+            </div>
+            <div class="testimonial-content content4">
+                <h1>COUPLE</h1>
+                <p class="container">A couple shares a moment, each wearing a Titan watch, symbolizing their timeless love and perfect harmony.
+                </p>
+            </div>
+            <div class="testimonial-content content5">
+                <h1>TITAN</h1>
+                <p class="container">Titan watches symbolize elegance and reliability, inspiring confidence while reminding us that time is precious. Each timepiece celebrates cherished moments and positivity.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

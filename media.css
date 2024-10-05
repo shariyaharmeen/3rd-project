@@ -11,6 +11,9 @@
       #icons {
         font-size: 15px;
     }
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
     .search {
         width: auto;
        }
@@ -28,29 +31,25 @@
         line-height: 5rem;
        font-size: 13px;
     }
-    .products-1 {
-        justify-content: center;
-    }
-    .items-container {
-      
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        justify-content: center;
-        align-items: center;
-    }
     .products-1 img {
+        height: 230px !important;
+        width: 24%!important;
+        object-fit: fill;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center;
+    }
+    .products img {
         object-fit: cover;
-        height: 27vh;
-        width: 150px;
+        height: 20vh;
     }
+ 
     .new h1 {
-        display: none;
+        font-size: 20px!important;
     }
-    .new h2{
-        display: block;
-        font-size: 20px;
-    }
+   
     .recom h1{
         font-size: 20px;
       }
@@ -61,6 +60,9 @@
         font-size: 20px;
     }
     .move h1{
+        font-size: 20px;
+    }
+    .brand-text h1{
         font-size: 20px;
     }
     .collection h1{
@@ -79,9 +81,7 @@
     .footer-bottom{
         font-size: 12px;
     }
-    .photo{
-        width: 100%;
-    }
+
     .product-1{
         width: 100%;
     }
@@ -95,22 +95,17 @@
         font-size: 10px;
     }
     
-    .products img {
-        object-fit: cover;
-        height: 17vh;
-    }
     .price h4 {
       font-size: 12px;
     }
     
-   
 
     .menu {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 20%;
-        height: 100vh;
+        height: 55vh;
         position: fixed;
         top: 0;
         right: -100%;
@@ -119,10 +114,12 @@
         transition: all 0.2s ease-in-out;
     }
     .menu li {
-        margin-top: 40px;
+        margin-top: 30px;
+        padding-left: 0px;
     }
     .menu li a {
-        padding: 10px;
+        padding: 0px;
+        font-size: 14px;
     }
     .open-menu, .close-menu {
         display: block;
@@ -130,6 +127,10 @@
     #check:checked ~ .menu {
         right: 0;
         width: 50%;
+    }
+
+    .header-section h1 {
+        font-size: 20px!important;
     }
 } 
 @media(min-width:611px) and (max-width:850px){
@@ -161,12 +162,9 @@
     }
    
     .new h1 {
-        display: none;
-    }
-    .new h2{
-        display: block;
         font-size: 20px;
     }
+  
     .recom h1{
         font-size: 20px;
       }
@@ -209,18 +207,12 @@
     .footer-column ul li {
         font-size: 12px;
     }
-    .items-container {
-      
-        display: flex;
-       
-        gap: 1em;
-        justify-content: center;
-        align-items: center;
-    }
     .products-1 img {
-        object-fit: cover;
-        height: 27vh;
+        height: 230px !important;
+        width: 24%!important;
+        object-fit: fill;
     }
+   
 }
 @media(min-width:851px) and (max-width:1100px){
     .navbar ul li a {
@@ -242,12 +234,9 @@
         font-size: 20px;
     }
     .new h1 {
-        display: none;
-    }
-    .new h2{
-        display: block;
         font-size: 20px;
     }
+   
     .recom h1{
         font-size: 20px;
       }
@@ -263,9 +252,7 @@
     .collection h1{
         font-size: 20px;
     }
-    .products img {
-        height: 35vh;
-    }
+
     .ratting i {
         font-size: 10px;
     }
@@ -284,17 +271,15 @@
     .icon-img h2 {
         font-size: 10px;
     }
-    .items-container {
-      
-        display: flex;
-       
-        gap: 1em;
-        justify-content: center;
-        align-items: center;
-    }
     .products-1 img {
-        height: 35vh;
+        height: 350px !important;
+        width: 24%!important;
+        object-fit: fill;
     }
+    .products img {
+        height: 55vh;
+    }
+
     .footer-column h2, .footer-column h3 {
         font-size: 20px;}
     .footer-column ul li {
@@ -315,13 +300,13 @@
         font-size: 13px;
     }
     .new h1{
-        display: none;
-    }
-    .new h2{
-        display: block;
+        font-size: 20px;
     }
     .products-1 img {
-        height: 46vh;
+        object-fit: cover;
+        height: 65vh !important;
+        width: 24.7% !important;
     }
+   
 }
     

@@ -99,10 +99,6 @@ body {
     font-size: 20px;
 }
 
-/* .items {
-    display: none;
-} */
-
 .humburger-menu input[type="checkbox"]:checked~.items {
     display: block;
 }
@@ -372,6 +368,7 @@ body {
     display: flex;
     gap: 15px;
     overflow-x: auto;
+    width: 100%;
 }
 
 .products::-webkit-scrollbar {
@@ -380,8 +377,7 @@ body {
 
 .products img {
     object-fit: cover;
-    height: 50vh;
-
+    height: 55vh;
 }
 
 .products-1 {
@@ -397,12 +393,12 @@ body {
 
 .products-1 img {
     object-fit: cover;
-    height: 51vh !important;
-
+    height: 30vh!important;
 }
 
 .items-container {
     position: relative;
+    width: 100%;
 }
 
 .items-container img {
@@ -419,6 +415,7 @@ body {
 
 .items img {
     transition: all .40s;
+
 }
 
 .items img:hover {
@@ -459,11 +456,6 @@ body {
     text-decoration: line-through;
 }
 
-.photo {
-    width: 21%;
-    height: 99%;
-}
-
 @keyframes slide {
     0% {
         transform: translateX(-100%);
@@ -479,26 +471,14 @@ body {
 }
 
 .new h1 {
-    padding: 25px;
-    margin-top: 20px;
-    font-size: 2.5em;
-    font-weight: 400;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    display:block !important;
-    font-family: "Prata", serif;
-    animation: slide 10s linear infinite;
-    
-}
-.new h2{
     padding: 20px;
+    margin-top: 20px;
     font-weight: 100;
-    font-size: 30px;
-    font-family: "Prata", serif;
+    font-size: 30px!important;
     text-align: center;
-    display: none !important;
+    font-family: "Prata", serif;  
 }
+
 
 .brand-container {
     background-color: rgb(241, 236, 227);
